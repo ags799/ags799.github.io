@@ -57,6 +57,16 @@ cd ./hello-world
 
 Note that the command initializes a git repository with a `.gitignore`.
 
+Add a line to `Cargo.toml` to avoid publishing your code:
+```toml
+[package]
+publish = false  # add this
+name = "hello-world"
+version = "0.1.0"
+authors = ["Andrew Sharp <me@sharpandrew.com>"]
+edition = "2020"
+```
+
 # What Does "Hello, world!" Look Like?
 You just created it.
 
