@@ -32,7 +32,7 @@ safe, there are a few less-than-obvious details of its syntax that I want to poi
 This is a list of things I think are important to remember as a beginner continues their
 journey with Rust. Here they are:
 
-# String Concatenation with `+`
+# String Concatenation with +
 E.g.
 ```rust
 let s1 = "one".to_string();
