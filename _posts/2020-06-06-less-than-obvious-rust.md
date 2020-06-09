@@ -51,7 +51,7 @@ One thing is for sure, `&Vec<T>` is `&[T]`. If you have a `fn f(a: &[i32])` you 
 doesn't work the other way around of course. The takeaway is: you better have a good reason to write a function with a
 `&Vec<T>` parameter. `&[T]` is safer.
 
-## What about String, str, and [u8]?
+## What about String, str, [char], and [u8]?
 Before moving on to using any of these types, ensure that you're working with *text*. The kind you'd print to the screen.
 There's no reason to deal with the following complexity otherwise.
 
@@ -59,6 +59,11 @@ That said, **str** seems to be a synonym for `[u8]`. Just as you can have a slic
 
 **String** is definitely the analog to *vectors*. It's a list of UTF-8 characters that can change in length. Of course, being
 UTF-8, there's a lot of other features that vectors don't have. But it's the same idea.
+
+There isn't so much interoperability with `[char]`. `str` is not `[char]`, neither is
+`String`, and it doesn't work the other way around, either. So `&str` seems like the
+greatest common denominator for working with strings. I hope you won't need to use
+`[char]`.
 
 
 # String Concatenation with +
