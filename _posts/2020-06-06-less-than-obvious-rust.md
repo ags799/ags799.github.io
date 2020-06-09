@@ -18,7 +18,7 @@ solve.
 
 I've never taken the time to truly understand another systems language, so take
 this with a grain of salt, but I think that Rust makes for a great entry into this
-category of languages. It's compiler works really hard to find potential bugs that other
+category of languages. Its compiler works really hard to find potential bugs that other
 systems languages might allow. It forces the developer to write good code,
 and depending on your investment into understanding the compiler's error messages, you
 have the chance to understand memory management on a deeper level.
