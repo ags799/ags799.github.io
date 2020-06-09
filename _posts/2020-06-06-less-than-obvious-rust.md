@@ -32,6 +32,35 @@ safe, there are a few less-than-obvious details of its syntax that I want to poi
 This is a list of things I think are important to remember as a beginner continues their
 journey with Rust. Here they are:
 
+
+# Vec<T>, [T], and &[T]
+Let's get some terminology out of the way:
+
+**array.** A fixed-length list where all elements share a type. Coded as `[a, b, c]`. Can be typed as `[i32]` or with the
+length as `[i32; 5]`.
+
+**slice.** A reference to a part of an array. If we have an array `a = [1, 2, 3]`, we can get a slice with `&a[0..2]`. A
+slice can be typed as `&[T]`.
+
+**vector.** A dynamic-length list where all elements share a type. Coded as `vec![a, b, c]`. Typed as `Vec<T>`.
+
+At this point you might be wondering, is something still a *slice* if we include the whole range? That is, is there a
+difference in name between a `&a[0..2]` a `&a`? AFAICT, they're both *slices*. Maybe I'm wrong.
+
+One thing is for sure, `&Vec<T>` is `&[T]`. If you have a `fn f(a: &[i32])` you can pass it `vec![1, 2, 3]`. It doesn't
+work the other way around of course. The takeaway is: you better have a good reason to write a function with a
+`&Vec<T>` parameter. `&[T]` is safer.
+
+## What about String, str, and [u8]?
+Before moving on to using any of these types, ensure that you're working with *text*. The kind you'd print to the screen.
+There's no reason to deal with the following complexity otherwise.
+
+That said, **str** seems to be a synonym for `[u8]`. Just as you can have a slice like `&[u8]`, `&str` is a *string slice*.
+
+**String** is definitely the analog to *vectors*. It's a list of UTF-8 characters that can change in length. Of course, being
+UTF-8, there's a lot of other features that vectors don't have. But it's the same idea.
+
+
 # String Concatenation with +
 E.g.
 ```rust
