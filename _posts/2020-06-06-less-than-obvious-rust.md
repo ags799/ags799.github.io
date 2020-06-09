@@ -47,8 +47,8 @@ slice can be typed as `&[T]`.
 At this point you might be wondering, is something still a *slice* if we include the whole range? That is, is there a
 difference in name between a `&a[0..2]` a `&a`? AFAICT, they're both *slices*. Maybe I'm wrong.
 
-One thing is for sure, `&Vec<T>` is `&[T]`. If you have a `fn f(a: &[i32])` you can pass it `vec![1, 2, 3]`. It doesn't
-work the other way around of course. The takeaway is: you better have a good reason to write a function with a
+One thing is for sure, `&Vec<T>` is `&[T]`. If you have a `fn f(a: &[i32])` you can pass it `&vec![1, 2, 3]`. It
+doesn't work the other way around of course. The takeaway is: you better have a good reason to write a function with a
 `&Vec<T>` parameter. `&[T]` is safer.
 
 ## What about String, str, and [u8]?
