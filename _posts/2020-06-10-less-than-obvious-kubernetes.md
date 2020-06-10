@@ -12,7 +12,7 @@ author: andrew
 description: The somewhat confusing details of Kubernetes I want to remember.
 ---
 
-There's no doubt that Kubernetes pushes software development forward like gale-force winds. That doesn't mean it's
+There's no doubt that Kubernetes pushes software development forward like gale-force winds. That doesn't mean its
 interface is as clear as day. These are the less-than-obvious details of its CLI that I'd like to remember.
 
 
