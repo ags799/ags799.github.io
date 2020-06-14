@@ -62,8 +62,9 @@ UTF-8, there's a lot of other features that vectors don't have. But it's the sam
 
 There isn't so much interoperability with `[char]`. `str` is not `[char]`, neither is
 `String`, and it doesn't work the other way around, either. So `&str` seems like the
-greatest common denominator for working with strings. I hope you won't need to use
-`[char]`.
+greatest common denominator for working with strings. When you think about it, `[char]`
+is something different. It isn't a contiguous series of space-saving UTF-8. It's an
+array of UTF-8 characters, and my guess is each character occupies the full 4 bytes.
 
 
 # String Concatenation with +
