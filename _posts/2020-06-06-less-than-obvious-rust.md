@@ -103,3 +103,15 @@ let s = format!("{}{}", &s1, &s2);
 `+`, but has the advantage of preserving immutability and not moving ownership of its
 arguments. There are times when we can't afford to be so lax with memory usage, but in
 other cases, `format!` makes for more maintainable code.
+
+
+# How does *for i in v* work?
+I'm not talking about
+```rust
+for i in v.iter()
+```
+
+or `v.iter_mut()`. Just plain old `for i in v`.
+
+It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to implement
+[IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
