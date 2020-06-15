@@ -111,7 +111,12 @@ I'm not talking about
 for i in v.iter()
 ```
 
-or `v.iter_mut()`. Just plain old `for i in v`.
+or
+```rust
+for i in v.iter_mut()
+```
+
+Just plain old `for i in v`.
 
 It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to implement
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
