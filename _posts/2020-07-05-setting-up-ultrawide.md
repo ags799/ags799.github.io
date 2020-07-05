@@ -51,7 +51,7 @@ default resolution controls on a Mac (*System Preferences -> Displays*):
 
 ![default resolution controls on a Mac](../assets/images/default-mac-display.png)
 
-you're probably going to end up with less-than-ultra width resolution (maybe 3840 instead of the glorious 5120). It's
+you're probably going to end up with a less-than-ultra width resolution (maybe 3840 instead of the glorious 5120). It's
 not going to look good, and it really ruins the appeal of the monitor.
 
 The great news is that it's easy to work around that. Click the `Default for display` radio button if it's not already
