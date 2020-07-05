@@ -49,7 +49,7 @@ machine. The monitor's USB-C port and USB-C cable work great for this. It will e
 This is the tricky part: the monitor's resolution is 5120x1440. That's not exactly a standard. If you use the
 default resolution controls on a Mac (*System Preferences -> Displays*):
 
-![default resolution controls on a Mac](../assets/images/default-mac-display.png)
+![default resolution controls on a Mac](/assets/images/default-mac-display.png)
 
 you're probably going to end up with a less-than-ultra width resolution (maybe 3840 instead of the glorious 5120). It's
 not going to look good, and it really ruins the appeal of the monitor.
@@ -57,7 +57,7 @@ not going to look good, and it really ruins the appeal of the monitor.
 The great news is that it's easy to work around that. Click the `Default for display` radio button if it's not already
 selected. Then hold the Option (⌥) key and click `Scaled`. This should bring up exact resolution options:
 
-![custom resolution controls on a Mac](../assets/images/option-mac-display.png)
+![custom resolution controls on a Mac](/assets/images/option-mac-display.png)
 
 There you have it! The glorious 5120x1440 option is just a click away. It's too bad that such a useful menu (selecting
 exact resolution) is hidden behind an undocumented modifier key.
