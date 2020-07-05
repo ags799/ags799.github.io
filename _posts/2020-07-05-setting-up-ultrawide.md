@@ -79,6 +79,28 @@ actually really hard to find, which is why I'm writing the link into my blog,
 redirects to `lg.com`). Enjoy!
 
 
+# Audio Controls
+This monitor comes with speakers. You're not going to love them, but they are certainly more immersive than my
+laptop's. Furthermore, you really can't ignore the convenience of the single USB-C port connection serving video,
+peripherals, *and* audio.
+
+So I'm using them, and maybe you will too. They do fall prey to the classic Mac trap: the volume controls on your
+keyboard won't affect any external speakers, these included.
+
+> Why do Macs do this? I'm not entirely sure in this case because we're talking about a USB-C connection, but I have
+heard that it's part of the HDMI spec to leave audio controls to the speakers. That's fair, but there's a solution to
+that problem: use HDMI-CEC messages to send volume up/down commands to the speakers. I'm not sure why Apple isn't doing
+that.
+
+You can use the monitor's hardware controls to adjust the volume, but that's really inconvenient (your keyboard
+controls are already beneath your fingers!). I'd recommend using [SoundSource](https://rogueamoeba.com/soundsource/)
+instead.
+
+SoundSource has a lot of features that I've never used before. It's paid software too: a lifetime license costs $30.
+That said, "it just works". Install the software, run it on login, and your keyboard controls will operate your
+speakers. The financial decision is up to you.
+
+
 # To Conclude
 
 That's it! You can try playing with the monitor's picture mode if you want. The default ("Vivid") works fine for me.
