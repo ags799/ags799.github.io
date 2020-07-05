@@ -32,7 +32,9 @@ An important grievance:
 To summarize: I think it makes sense for enthusiasts who like the way it looks and don't mind spending money on
 unnecessary tech.
 
-Now let's get to the real point of this post: what all is involved in setting it up to use with your Mac:
+Now let's get to the real point of this post: what all is involved in setting it up to use with your Mac (note that
+this advice should extend across LG's Ultrawide line and will probably help people using other brand monitors as well.
+It won't be useful if you're using another OS, though).
 
 
 # Connection
@@ -59,3 +61,25 @@ selected. Then hold the Option (⌥) key and click `Scaled`. This should bring u
 
 There you have it! The glorious 5120x1440 option is just a click away. It's too bad that such a useful menu (selecting
 exact resolution) is hidden behind an undocumented modifier key.
+
+
+# Window Management
+
+macOS already provides some slick window management via fullscreen apps, multiple desktops, and mission control.
+Depending on your preferences, those default features may be enough for ultrawide use. For most coding tasks I think
+it's sufficient to have a fullscreen split between Chrome and my IDE.
+
+Sometimes you want more than two apps, though, and macOS doesn't provide much support for that. You can manually move
+and resize windows to your heart's content, but that gets old fast, and it feels like there should be software to
+handle that for you.
+
+LG was thinking the same thing, so they made some window management software to go with their ultrawide monitors. It's
+actually really hard to find, which is why I'm writing the link into my blog,
+[right here](http://gscs-b2c.lge.com/downloadFile?fileId=D69pl26Ru9P0ZBgWlPnug) (that's a safe link, `lge.com`
+redirects to `lg.com`). Enjoy!
+
+
+# To Conclude
+
+That's it! You can try playing with the monitor's picture mode if you want. The default ("Vivid") works fine for me.
+Hope you enjoy it as much as I do!
