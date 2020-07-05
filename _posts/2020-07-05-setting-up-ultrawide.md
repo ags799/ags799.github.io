@@ -12,10 +12,10 @@ description: Preparing to use an LG Ultrawide Monitor with your Mac.
 ---
 
 I decided to try an ultrawide monitor to bring some change (and even excitement) to my work-from-home daily grind. I
-figure that now is the opportunity to try some of the more extreme productivity gear out there, and maybe even have
+figure that now is the time to try some of the more extreme productivity gear out there, and maybe even have
 some fun with it. So I went all-out:
 [the 49", 32:9, 5120x1440 curved ultrawide display from LG](https://www.lg.com/us/monitors/lg-49WL95C-W-ultrawide-monitor#)
-(its real name is the LG 49WL95C-W but I figure that doesn't really mean anything to anyone but the manufacturer).
+(its real name is the `49WL95C-W` but I figure that doesn't mean anything to anyone but the manufacturer).
 
 What do I think? It's a luxury item. Totally unnecessary. I couldn't possibly recommend it: the price is exorbitant
 and there's just no way a monitor could justify the cost. It does have some really handy features though:
@@ -23,7 +23,7 @@ and there's just no way a monitor could justify the cost. It does have some real
 same peripherals.
 - you can even split the screen in half: one side for each computer.
 - speakers (not great but not terrible)
-- a USB-C port (and cable!) that transfers video, audio, USB peripherals, and enough power to charge your MacBook Pro
+- a USB-C port (and cable!) that transfers video, audio, USB peripherals, and enough power to charge your MacBook Pro.
 - it is *huge*.
 
 An important grievance:
@@ -44,5 +44,18 @@ machine. The monitor's USB-C port and USB-C cable work great for this. It will e
 
 # Resolution
 
-This is the tricky part: the monitor's resolution is 5120x1440. That's not exactly a common standard. If you use the
-common resolution controls on a Mac (*System Preferences -> Displays*):
+This is the tricky part: the monitor's resolution is 5120x1440. That's not exactly a standard. If you use the
+default resolution controls on a Mac (*System Preferences -> Displays*):
+
+![default resolution controls on a Mac](../assets/images/default-mac-display.png)
+
+you're probably going to end up with less-than-ultra width resolution (maybe 3840 instead of the glorious 5120). It's
+not going to look good, and it really ruins the appeal of the monitor.
+
+The great news is that it's easy to work around that. Click the `Default for display` radio button if it's not already
+selected. Then hold the Option (⌥) key and click `Scaled`. This should bring up exact resolution options:
+
+![custom resolution controls on a Mac](../assets/images/option-mac-display.png)
+
+There you have it! The glorious 5120x1440 option is just a click away. It's too bad that such a useful menu (selecting
+exact resolution) is hidden behind an undocumented modifier key.
