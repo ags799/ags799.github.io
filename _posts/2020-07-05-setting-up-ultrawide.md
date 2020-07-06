@@ -63,6 +63,14 @@ There you have it! The glorious 5120x1440 option is just a click away. It's too 
 exact resolution) is hidden behind an undocumented modifier key.
 
 
+# Brightness
+
+I think that the default picture settings are fine, with one exception. The monitor has an ambient light sensor, and
+if you use the monitor's on-screen display you can turn on "Auto Brightness" under the "Settings" menu, it will
+automatically adjust the screen's brightness to match your room's light level. It works very well and makes the screen
+more enjoyable to look at.
+
+
 # Window Management
 
 macOS already provides some slick window management via fullscreen apps, multiple desktops, and mission control.
