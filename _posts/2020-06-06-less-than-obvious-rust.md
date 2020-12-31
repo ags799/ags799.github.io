@@ -120,3 +120,8 @@ Just plain old `for i in v`.
 
 It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to implement
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
+
+
+# &Trait, Box<Trait>, impl Trait, and dyn Trait
+
+Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
