@@ -122,6 +122,6 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
 
 
-# &Trait, Box<Trait>, impl Trait, and dyn Trait
+# &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
 
 Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
