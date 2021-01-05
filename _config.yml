@@ -1,6 +1,6 @@
 # main text of home
 name: Andrew Sharp
-bio: Software Engineer. Austin, Texas. he/him/his
+bio: Software Engineer. Houston, Texas. he/him/his
 
 # twitter summary info
 description: ''
@@ -56,7 +56,7 @@ email: me@sharpandrew.com
 authors:
     andrew:
         name: Andrew Sharp
-        bio: Software Engineer. Austin, Texas. he/him/his
+        bio: Software Engineer. Houston, Texas. he/him/his
         external-image: false
         picture: assets/images/profile.jpg
 

@@ -15,7 +15,7 @@ deployment (Palantir, 2015-16), transforming the Raspberry Pi into an HDMI test 
 an innovative storage product that promises to make latency a thing of the past (Cloudflare, 2018-20). My work has also
 taken me around the globe, from Seoul to Singapore and San Francisco to New York.
 
-I now reside in Austin, Texas not far from my alma mater, the University of Texas at Austin. I am always excited to
+I now reside in my hometown, Houston, Texas, and am open to remote positions. I am always excited to
 hear about new applications of software engineering to solve our everyday problems and to meet humanity's most critical
 challenges. If you think I'd be a good fit for your team, please don't hesitate to contact me on
 [LinkedIn](https://linkedin.com/in/{{ site.linkedin }}).
