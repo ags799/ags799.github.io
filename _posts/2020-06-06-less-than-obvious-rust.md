@@ -33,6 +33,11 @@ This is a list of things I think are important to remember as a beginner continu
 journey with Rust. Here they are:
 
 
+# Clone vs Copy
+From [the docs](https://doc.rust-lang.org/std/clone/trait.Clone.html#:~:text=Differs%20from%20Copy%20in%20that,Clone%20and%20run%20arbitrary%20code.),
+> `Copy` is implicit and extremely inexpensive, while `Clone` is always expensive and may or may not be expensive.
+
+
 # Vec<T>, [T], and &[T]
 Let's get some terminology out of the way:
 
