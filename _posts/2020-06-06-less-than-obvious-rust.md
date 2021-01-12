@@ -177,4 +177,4 @@ To use a closure here, you have to use a _generic_:
 struct S<T where T: Fn(u32) -> u32> {
     closure: T,
 }
-``
+```
