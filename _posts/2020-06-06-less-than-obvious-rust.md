@@ -130,3 +130,23 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 # &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
 
 Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
+
+
+# All Closures Have Types
+
+Rust lets you elide type annotations on closures. So while you'd have to type a function:
+```rust
+fn identity(x: u32) -> u32 { x }
+```
+you don't need to type a closure
+```rust
+let identity = |x| x;
+```
+That doesn't mean the closure has a more flexible type, however. You can't
+```rust
+let identity = |x| x;
+identity("Hello");
+identity(5);
+```
+Here, the compiler gives `identity` type `(String) -> String`. It makes this inference from the function body and the
+first call to the function. The second call won't compile because it fails the inferred type check.
