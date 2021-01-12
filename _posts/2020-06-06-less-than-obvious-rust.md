@@ -148,5 +148,5 @@ let identity = |x| x;
 identity("Hello");
 identity(5);
 ```
-Here, the compiler gives `identity` type `(String) -> String`. It makes this inference from the function body and the
+Here, the compiler gives `identity` type `Fn(String) -> String`. It makes this inference from the function body and the
 first call to the function. The second call won't compile because it fails the inferred type check.
