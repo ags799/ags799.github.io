@@ -132,7 +132,7 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
 
 
-# All Closures Have Types
+# All Closures have Types
 
 Rust lets you elide type annotations on closures. So while you'd have to type a function:
 ```rust
@@ -150,3 +150,31 @@ identity(5);
 ```
 Here, the compiler gives `identity` type `Fn(String) -> String`. It makes this inference from the function body and the
 first call to the function. The second call won't compile because it fails the inferred type check.
+
+
+# Each Instance of a Closure has its Own Type
+That is, in
+```rust
+let f1 = |x| x;
+let f2 = |x| x;
+```
+`f1` and `f2` have different types. What does this mean in practical programming? You *cannot* do this:
+```rust
+struct S {
+    closure: Fn(u32) -> u32,
+}
+
+fn main() {
+    let f = |x| x;
+    let s = S { closure: f };
+}
+```
+The compiler won't let you use `f`, a closure, as this field, because it considers the closure to have its own type
+(you might see the type reported as something like `[closure@src/main.rs:20:13: 20:18]`).
+
+To use a closure here, you have to use a _generic_:
+```rust
+struct S<T where T: Fn(u32) -> u32> {
+    closure: T,
+}
+``
