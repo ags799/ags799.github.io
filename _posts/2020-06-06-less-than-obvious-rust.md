@@ -178,3 +178,19 @@ struct S<T where T: Fn(u32) -> u32> {
     closure: T,
 }
 ```
+
+
+# Nested Functions Cannot Use Variables in the Outer Scope
+We all love closures for letting us do things like
+```rust
+let x = 1;
+let c = |y| y == x;
+```
+and Rust permits us this fancy.
+
+However, if it strikes our fancy to use function syntax instead:
+```rust
+let x = 1;
+fn f(y: i32) -> bool { y == x };
+```
+We'll get an error. Rust doesn't let nested functions use variables in the outer scope.
