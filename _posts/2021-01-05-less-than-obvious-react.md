@@ -1,7 +1,7 @@
 ---
 title: "Less-Than-Obvious React"
 layout: post
-date: 2020-06-06
+date: 2020-01-05
 image: /assets/images/markdown.png
 headerImage: false
 tag:
