@@ -22,6 +22,8 @@ It's responsible for the `package.json` files in your JavaScript projects.
 # What is `npm shrinkwrap`?
 It's a subcommand of the `npm` tool. You run it within a Node project to create a file `npm-shrinkwrap.json`.
 
+Note that you'll probably want to run `npm shrinkwrap --dev` to include your development dependencies.
+
 # What is the `npm-shrinkwrap.json` for?
 It's a list of all of your dependencies and their exact versions.
 
@@ -32,3 +34,7 @@ version that's backwards compatible with it, like `1.2.5` or `1.3.0`.
 
 In theory, that should create a deterministic build. In practice, however, semantic versioning is more of a suggestion
 than a rule, and it creates non-deterministic builds. So we have `npm-shrinkwrap.json` as a way of being more specific.
+
+# How does it relate to `package-lock.json`?
+They do the same thing except that `npm-shrinkwrap.json` is uploaded on a publish to npm. So if you're using an npm
+repository, and you want clients to use exact version dependencies, you'll want to provide shrinkwrap.
