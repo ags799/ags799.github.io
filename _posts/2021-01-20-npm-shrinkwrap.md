@@ -1,7 +1,7 @@
 ---
 title: "What is npm shrinkwrap?"
 layout: post
-date: 2020-01-20
+date: 2021-01-20
 image: /assets/images/markdown.png
 headerImage: false
 tag:
