@@ -38,6 +38,27 @@ From [the docs](https://doc.rust-lang.org/std/clone/trait.Clone.html#:~:text=Dif
 > `Copy` is implicit and extremely inexpensive, while `Clone` is always explicit and may or may not be expensive.
 
 
+# What is a Mutable Reference?
+Okay so we know that if we want to change a variable, we have to make it mutable:
+```rust
+let mut i = 1;
+i = 2;
+```
+And sometimes when we pass a variable around, we just want to pass a reference to that variable:
+```rust
+let mut i = 1;
+do_something(&i);
+```
+Did you know that `do_something` would not be allowed to change the variable with `*i = 3`?
+
+What if we wanted to pass a reference to the variable to a function, and we wanted to modify the variable in that
+function? We would use a _mutable reference_:
+```rust
+let mut i = 1;
+do_something(&mut i);
+```
+
+
 # Vec<T>, [T], and &[T]
 Let's get some terminology out of the way:
 
