@@ -148,6 +148,21 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
 
 
+# How can I use a Trait as a Parameter Type?
+Rust doesn't let you do
+```rust
+fn f(s: Debug) { // replace `Debug` with any trait
+    // do something
+}
+```
+You have to do
+```rust
+fn f<T: Debug>(s: T) {
+    // do something
+}
+```
+
+
 # &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
 
 Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
