@@ -163,9 +163,29 @@ fn f<T: Debug>(s: T) {
 ```
 
 
-# &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
+# What is a Trait Object?
+Quoting from the book:
+> A trait object points to both an instance of a type implementing our specified trait as well as a table used to look
+> up trait methods on that type at runtime.
 
-Read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
+Remember that these objects _point_ to the instance of the type. So they have to be represented as a pointer, with `&`,
+`Box`, or some other pointer. We also must use the `dyn` keyword, for reasons I haven't understood yet.
+
+So it would look like
+```rust
+Box<dyn Trait>
+```
+
+Another quote from the book, helps in understanding the etymology:
+> ...we refrain from calling structs and enums "objects" to distinguish them from other languages' objects...the data
+> in the struct fields and the behavior in `impl` blocks are separated...[h]owever, trait objects _are_ more like
+> objects...in the sense that they combine data and behavior.
+
+
+# &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
+First, see the heading "What is a Trait Object?".
+
+Then, read [this](https://joshleeb.com/posts/rust-traits-and-trait-objects/).
 
 
 # All Closures have Types
