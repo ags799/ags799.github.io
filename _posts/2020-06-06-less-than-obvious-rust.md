@@ -182,6 +182,12 @@ Another quote from the book, helps in understanding the etymology:
 > objects...in the sense that they combine data and behavior.
 
 
+# Only Certain Traits can be Trait Objects
+In order to be a _trait object_, a trait must be _object-safe_. In order to be _object-safe_, all methods of the trait must:
+- not return `Self`
+- have no generic type parameters
+
+
 # &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
 First, see the heading "What is a Trait Object?".
 
