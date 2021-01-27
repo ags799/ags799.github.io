@@ -148,6 +148,26 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
 
 
+# The Order of Operations with Patterns and Match Guards
+Firstly, you need to know that you can do some crazy stuff with `match`:
+```rust
+match x {
+  1 | 2 | 3 => println!("x is 1, 2, or 3"),
+  _ if x > 10 => println!("x is greater than 10"),
+  _ => println!("x is between 4 and 9, inclusive"),
+}
+```
+What about this?
+```rust
+match x {
+  1 | 2 | 3 if y == 0 => println!("x is 1 and y is 0, or x is 2 and y is 0, or x is 3 and y is 0"),
+  // etc...
+}
+```
+Basically, it's not-so-obvious that the _match guard_ `y == 0` applies to all the patterns on the left. Just wanted to
+point that out.
+
+
 # How can I use a Trait as a Parameter Type?
 Rust doesn't let you do
 ```rust
