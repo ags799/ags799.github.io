@@ -26,6 +26,10 @@ Computer security can feel like a vast ocean of technologies and terms. This glo
 wayward sailor.
 
 
+# ASN.1
+TODO
+
+
 # Certificate
 A certificate does a few things:
 1. It identifies the owner in human-readable terms.
@@ -46,18 +50,25 @@ Issued to a [CA](#CA: Certificate Authority) by a website when it wants to get a
 CA.
 
 
+# DER (Distinguished Encoding Rules)
+DER is a binary encoding for cryptographic information, like certificates, CSRs, and cryptographic keys. It's the
+binary version of [PEM](#PEM).
+
+
 # HTTPS
 TODO
 
 
-# PEM
-PEM is a file format for holding cryptographic information. It looks like this:
+# PEM (Private Enhanced Mail)
+PEM is a file format for cryptographic information, like certificates, CSRs, and cryptographic keys. It looks like
+this:
 ```
 -----BEGIN RSA PRIVATE KEY-----
 lotsOfRandomText
 12345
 -----END RSA PRIVATE KEY-----
 ```
+It is the copy-pastable version of [DER](#DER).
 
 
 # Public-Key Cryptography
@@ -67,6 +78,14 @@ Also known as _assymetric cryptography_.
 1. A client requests the public key.
 1. The client encrypts a message with the public key.
 1. Only the private key can decrypt it.
+
+
+# PKCS1
+TODO, see https://stackoverflow.com/a/48960291/1592772
+
+
+# PKCS8
+TODO, see https://stackoverflow.com/a/48960291/1592772
 
 
 # PKI: Public-Key Infrastructure
