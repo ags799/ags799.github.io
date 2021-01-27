@@ -50,6 +50,16 @@ CA.
 TODO
 
 
+# PEM
+PEM is a file format for holding cryptographic information. It looks like this:
+```
+-----BEGIN RSA PRIVATE KEY-----
+lotsOfRandomText
+12345
+-----END RSA PRIVATE KEY-----
+```
+
+
 # Public-Key Cryptography
 Also known as _assymetric cryptography_.
 
