@@ -196,6 +196,60 @@ fn f<T: Debug>(s: T) {
 ```
 
 
+# Navigating the Maze of Generic Syntax for Traits
+The difficulty here is best explained with an example:
+```rust
+impl<T> SomeTrait<T> for SomeStruct {
+  fn some_method(&self, parameter: T);
+}
+```
+That's a lot of `<T>`. Let's break it down:
+```rust
+// let's start by describing our trait
+trait SomeTrait<T> { // so our trait takes a type parameter
+  fn some_method(&self, parameter: T); // this same type parameter is used in a method
+}
+
+// now we implement for a specific T
+impl SomeTrait<i32> for OurStruct {
+  fn some_method(&self, parameter: i32) {
+    // whatever...
+  }
+}
+```
+Alternatively, we could do this generic implementation, _but you can't have both_:
+```rust
+// we have to have `<T>` after `impl` to indicate that we are parameterizing the trait
+impl<T> SomeTrait<T> for SomeStruct {
+  fn some_method(&self, parameter: T) {
+    // whatever...
+  }
+}
+```
+Want things to get even crazier? What if we did it with a generic struct:
+```rust
+struct SomeStruct<T> {
+  item: T,
+}
+
+// you can only use one of these impl blocks:
+// 1. generic struct
+impl<T> SomeTrait<i32> for SomeStruct<T> {
+  fn some_method(&self, parameter: i32);
+}
+
+// 2. generic trait
+impl<T> SomeTrait<T> for SomeStruct<i32> {
+  fn some_method(&self, parameter: T);
+}
+
+// 3. both are generic
+impl<T, U> SomeTrait<T> for SomeStruct<U> {
+  fn some_method(&self, parameter: T);
+}
+```
+
+
 # What is a Trait Object?
 Quoting from the book:
 > A trait object points to both an instance of a type implementing our specified trait as well as a table used to look
