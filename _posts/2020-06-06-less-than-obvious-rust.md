@@ -289,3 +289,52 @@ let x = 1;
 fn f(y: i32) -> bool { y == x };
 ```
 We'll get an error. Rust doesn't let nested functions use variables in the outer scope.
+
+
+# What's the Difference Between an Associated Type and a Generic?
+A generic:
+```rust
+trait Throw<T> {
+  fn throw(&self, item: T);
+}
+```
+can be implemented for a type in multiple ways:
+```rust
+struct Person {
+  name: String,
+}
+
+impl Throw<Baseball> for Person {
+  fn throw(&self, item: Baseball) {
+    // throw the baseball
+  }
+}
+
+impl Throw<Football> for Person {
+  // you get it...
+}
+```
+You can even parameterize your implementation:
+```rust
+impl<T> Throw<T> for Person {
+  fn throw(&self, item: T) {
+    println!("{} threw something", self.name);
+  }
+}
+```
+Associated types, on the other hand, only allow you to implement the trait one way:
+```rust
+trait Kick {
+  type Item;
+
+  fn kick(&self, item: Self::Item); // note the need to use `Self::` to address `Item`
+}
+
+impl Kick for Person {
+  type Item = SoccerBall
+
+  fn kick(&self, item: Self::Item) {
+    // kick the soccer ball...
+  }
+}
+```
