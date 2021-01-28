@@ -148,6 +148,19 @@ It's syntactic sugar for `for i in v.into_iter()`. In other words, `v` needs to 
 [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html).
 
 
+# You can do a _lot_ with Patterns
+```rust
+match x {
+  1 | 2 => "multiple patterns",
+  3 ... 5 => "ranges",
+  Color { red: 255, .. } => "use `..` to ignore the rest of the fields in a struct",
+  Color { blue, .. } => "get the `blue` field without using `:`",
+  Color { blue: value @ 120 ... 200 } => "capture the `blue` field in `value` and test that it's in a range",
+  _ => "catch-all",
+}
+```
+
+
 # The Order of Operations with Patterns and Match Guards
 Firstly, you need to know that you can do some crazy stuff with `match`:
 ```rust
