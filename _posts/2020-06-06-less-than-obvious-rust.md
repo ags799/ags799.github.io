@@ -131,6 +131,27 @@ arguments. There are times when we can't afford to be so lax with memory usage, 
 other cases, `format!` makes for more maintainable code.
 
 
+# You Can Make Structs from Tuples
+Coming from Go, this kind of struct syntax in Rust was pretty familiar:
+```rust
+struct Person {
+  name String,
+  age i32,
+}
+```
+What was surprising, however, was that you could make a struct out of a tuple:
+```rust
+struct Years(u32)
+
+
+fn main() {
+  let y = Years(5);
+  println!("{}", y.0); // "5"
+}
+```
+These are called _tuple structs_.
+
+
 # How does *for i in v* work?
 I'm not talking about
 ```rust
