@@ -59,6 +59,14 @@ binary version of [PEM](#PEM).
 TODO
 
 
+# JWK
+TODO
+
+
+# JWT
+TODO
+
+
 # PEM (Private Enhanced Mail)
 PEM is a file format for cryptographic information, like certificates, CSRs, and cryptographic keys. It looks like
 this:
