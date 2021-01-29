@@ -1,7 +1,7 @@
 ---
 title: "Rust's Orphan Rule"
 layout: post
-date: 2021-01-23
+date: 2021-01-28
 image: /assets/images/markdown.png
 headerImage: false
 tag:
