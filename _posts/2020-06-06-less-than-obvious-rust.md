@@ -308,6 +308,7 @@ trait Smartphone: Phone { // note the colon, that's the syntax, Smartphone inher
   fn browse_web(&self, website: Url);
 }
 ```
+One last bit of terminology, here we say that `Phone` is a _supertrait_ of `Smartphone`.
 
 
 # &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
