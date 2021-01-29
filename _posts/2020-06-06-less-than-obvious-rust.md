@@ -275,6 +275,20 @@ In order to be a _trait object_, a trait must be _object-safe_. In order to be _
 - have no generic type parameters
 
 
+# Traits Can Inherit Other Traits
+That's right: Rust does have inheritance. Not the object kind though. A _trait_ can inherit another trait. It's like
+saying that the trait requires all of the things of the other trait, and then some new stuff. Here's an example:
+```rust
+trait Phone {
+  fn call(&self, contact: Contact);
+}
+
+trait Smartphone: Phone { // note the colon, that's the syntax, Smartphone inherits Phone
+  fn browse_web(&self, website: Url);
+}
+```
+
+
 # &Trait, Box&lt;Trait&gt;, impl Trait, and dyn Trait
 First, see the heading "What is a Trait Object?".
 
