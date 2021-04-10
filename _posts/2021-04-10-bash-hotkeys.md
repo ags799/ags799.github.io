@@ -17,6 +17,7 @@ description: Memorize these useful hotkeys to make using macOS Terminal more enj
 # History
 - *Ctrl-p* load the previous command
 - *Ctrl-n* load the next command
+- *Ctrl-r* search history for some text
 
 # Movement
 - *Option-left* move the caret left one word
