@@ -14,6 +14,10 @@ author: andrew
 description: Memorize these useful hotkeys to make using macOS Terminal more enjoyable.
 ---
 
+# Execution
+- *Ctrl-c* cancel the current command
+- *Ctrl-d* exit the shell
+
 # History
 - *Ctrl-p* load the previous command
 - *Ctrl-n* load the next command
