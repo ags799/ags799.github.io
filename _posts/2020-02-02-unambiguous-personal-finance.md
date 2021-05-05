@@ -75,12 +75,10 @@ a savings account, we look for two things:
 
 ## Which Do I Choose?
 I can make a very specific recommendation about which savings account to use: the
-[Wealthfront Cash Account](https://www.wealthfront.com/cash). Wealthfront keeps its interest rate as high
-as possible, is FDIC-insured, and only requires $1 to start.
+[Ally Online Savings Account](https://www.ally.com/bank/online-savings-account/). At the time of writing, the interest
+rate is a very high 0.5%, there are no monthly maintenance fees, and you can start the account with $0.
 
-That's right: **if you have $1 to spare, you can start a high-interest savings account right now**.
-
-So start your Wealthfront Cash Account now and keep depositing your spare cash. Ideally, your savings
+So start your Ally Online Savings Account now and keep depositing your spare cash. Ideally, your savings
 account will cover
 3-6 months expenditures, so if you are suddenly unemployed, you have 3-6 months to find a new job before
 your money runs out. The exact number of months to save for depends on your job: if it's easy to find a
@@ -200,7 +198,7 @@ to put money you plan on spending any time soon, and it is subject to the ups an
 is possible to lose money.
 
 ## So What Is it?
-Another fine product by Wealthfront, a [Wealthfront Investment Account](https://www.wealthfront.com/investing).
+The [Wealthfront Investment Account](https://www.wealthfront.com/investing).
 This is your portal into the complicated world of stocks, bonds, commodities, etc. You'll need $500 to get
 started, and they charge 0.25% of your account annually. In return you get a pain-free way to deposit your
 spare cash into an account that intelligently spreads your money across many different kinds of investment.
