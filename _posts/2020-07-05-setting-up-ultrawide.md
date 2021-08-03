@@ -21,7 +21,8 @@ What do I think? It's a luxury item. Totally unnecessary. I couldn't possibly re
 and there's just no way a monitor could justify the cost. It does have some really handy features though:
 - it operates as a KVM: you can plug in two computers, one keyboard, and one mouse, and control both computers with the
 same peripherals.
-- you can even split the screen in half: one side for each computer.
+- you can even split the screen in half: one side for each computer. This makes it a pretty compelling product if using
+multiple computers simultaneously is a regular part of your day.
 - speakers (not great but not terrible)
 - a USB-C port (and cable!) that transfers video, audio, USB peripherals, and enough power to charge your MacBook Pro.
 - it is *huge*.
