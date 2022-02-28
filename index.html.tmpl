@@ -1,3 +1,4 @@
+<!-- {{ (ds "config").warning }} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,18 @@
   <meta name="description" content="{{ (ds "config").description }}" />
   <meta name="author" content="{{ (ds "config").name }}">
 
+  <!-- https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls -->
+  <link rel="canonical" href="{{ (ds "config").url }}" />
+
   <!-- opengraph metadata https://opg.me -->
+  <!-- note that Twitter falls back on these -->
+  <!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup -->
   <meta property="og:title" content="{{ (ds "config").name }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ (ds "config").url }}" />
-  <meta property="og:image" content="{{ (ds "config").url }}/{{ (ds "config").image_path }}" />
+  <meta property="og:image" content="{{ (ds "config").url }}{{ (ds "config").image_path }}" />
   <meta property="og:description" content="{{ (ds "config").description }}" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
