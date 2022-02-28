@@ -43,6 +43,18 @@ p, li {
 
 /* For mobile phones: */
 @media only screen and (max-width: 1000px) {
+  body {
+    padding: 10px;
+  }
+
+  div {
+    padding: 10px;
+  }
+
+  p, li {
+    font-size: 1.25em;
+  }
+
   .responsive-horizontal {
     flex-direction: column;
   }
