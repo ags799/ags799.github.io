@@ -1,6 +1,11 @@
 body {
   background-color: cornsilk;
   font-family: 'League Spartan', sans-serif;
+  padding: 20px;
+}
+
+div {
+  padding: 20px;
 }
 
 h1 {
@@ -10,4 +15,31 @@ h1 {
 p, li {
   font-size: 1.5em;
   line-height: 1.5
+}
+
+.social {
+  font-size: 1.5em;
+}
+
+.profile-picture {
+  min-width: 35%;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 1000px) {
+  .responsive-horizontal {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* For wide screens */
+@media only screen and (min-width: 1400px) {
+  .profile-picture {
+    min-width: 467px;
+  }
 }
