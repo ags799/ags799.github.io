@@ -51,10 +51,6 @@ p, li {
     padding: 10px;
   }
 
-  p, li {
-    font-size: 1.25em;
-  }
-
   .responsive-horizontal {
     flex-direction: column;
   }
