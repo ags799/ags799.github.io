@@ -7,13 +7,21 @@
   <meta name="description" content="Andrew Sharp's personal site." />
   <meta name="author" content="Andrew Sharp">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- fonts -->
+  <!-- League Spartan https://fonts.google.com/specimen/League+Spartan -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div style="display:flex;justify-content:space-between">
-    <h1>Andrew Sharp</h1>
-    <a href="https://linkedin.com/in/andrew-sharp" target="_blank" rel="noopener noreferrer">
+  <!-- top bar -->
+  <div style="display:flex">
+    <h1 style="padding:10px">Andrew Sharp</h1>
+    <a href="https://linkedin.com/in/andrew-sharp" target="_blank" rel="noopener noreferrer" style="padding:10px">
       <!-- linkedin logo -->
       <!-- original size width=2500 height=2389 -->
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 5 1036 990">
@@ -21,27 +29,27 @@
       </svg>
     </a>
   </div>
+
+  <!-- content -->
   <div style="display:flex;justify-content:space-between">
-    <img src="profile.jpg" alt="Profile picture">
-    <div class="about">
+    <div style="padding:10px">
+      <img src="profile.jpg" alt="Profile picture">
+    </div>
+    <div class="about" style="padding:10px">
       <p>
-        I engineer distributed systems for <a href="https://circle.com">Circle</a>. Previously I:
+        I engineer distributed systems at <a href="https://circle.com">Circle</a>. Previously I:
         <ul>
           <li>
             Founded the <a href="https://www.cloudflare.com/products/workers-kv/">Workers KV</a> team at
             <a href="https://cloudflare.com">Cloudflare</a>.
           </li>
           <li>
-            Developed a web IDE at <a href="https://palantir.com">Palantir</a> using
-            <a href="https://microsoft.github.io/language-server-protocol/">language servers</a>.
-          </li>
-          <li>
-            Developed an ETL pipeline for an anti-money laundering client at
+            Started my career as a Forward Deployed Engineer on an anti-money laundering deployment at
             <a href="https://palantir.com">Palantir</a>.
           </li>
           <li>
             Graduated from the University of Texas at Austin's 5-year BS/MS program in Computer Science (a Bachelor's
-            and Master's degree combined into 5 years).
+            and Master's degree program combined into 5 years).
           </li>
         </ul>
       <p>

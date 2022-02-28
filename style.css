@@ -1,3 +1,13 @@
 body {
   background-color: cornsilk;
+  font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+  margin: 0px;
+}
+
+p, li {
+  font-size: 1.5em;
+  line-height: 1.5
 }
