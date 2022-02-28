@@ -1,7 +1,16 @@
 body {
-  background-color: cornsilk;
+  background-color: rgb(77, 91, 108);
   font-family: 'League Spartan', sans-serif;
+  color: rgb(164, 192, 203);
   padding: 20px;
+}
+
+a:link {
+  color: rgb(244, 239, 238);
+}
+
+a:visited {
+  color: rgb(242, 207, 199);
 }
 
 div {
@@ -41,5 +50,11 @@ p, li {
 @media only screen and (min-width: 1400px) {
   .profile-picture {
     min-width: 467px;
+  }
+
+  body {
+    width: 1400px;
+    max-width: max-content;
+    margin: auto;
   }
 }
