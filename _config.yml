@@ -1,0 +1,9 @@
+# GitHub Pages use Jekyll
+# We use this configuration to exclude files from publishing.
+# Documentation for Jekyll Configuration (this file) here: https://jekyllrb.com/docs/configuration/options/
+exclude:
+  - index.html.tmpl
+  - flake.lock
+  - flake.nix
+  - Makefile
+  - README.md
