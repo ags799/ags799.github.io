@@ -8,3 +8,5 @@ https://sharpandrew.com
 - Some information is duplicated, and we use `config.yml` and
   [gomplate](https://github.com/hairyhenderson/gomplate) to de-duplicate.
 - Update `index.html` with `make`.
+- If you ever need to add new files and you don't want them published to the web, add them to the
+  `exclude` list in `_config.yml`.
