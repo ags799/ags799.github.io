@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ (ds "config").name }}</title>
+  <meta name="description" content="{{ (ds "config").description }}" />
+  <meta name="author" content="{{ (ds "config").name }}">
+
+  <!-- opengraph metadata https://opg.me -->
+  <meta property="og:title" content="{{ (ds "config").name }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ (ds "config").url }}" />
+  <meta property="og:image" content="{{ (ds "config").url }}/{{ (ds "config").image_path }}" />
+  <meta property="og:description" content="{{ (ds "config").description }}" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- League Spartan https://fonts.google.com/specimen/League+Spartan -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- top bar -->
+  <div style="display:flex;justify-content:space-between">
+    <div>
+      <h1>{{ (ds "config").name }}</h1>
+    </div>
+    <div class="social">
+      <a href="{{ (ds "config").linked_in }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="responsive-horizontal" style="display:flex;justify-content:space-between">
+    <div class="profile-picture">
+      <img src="{{ (ds "config").image_path }}" alt="Profile picture" style="object-fit:contain;max-width:427px" width="100%">
+    </div>
+    <div>
+      <p>
+        I am helping democratize finance at <a href="https://circle.com">Circle</a>. Previously I:
+        <ul>
+          <li>
+            Founded the <a href="https://www.cloudflare.com/products/workers-kv/">Workers KV</a> team at
+            <a href="https://cloudflare.com">Cloudflare</a>.
+          </li>
+          <li>
+            Started my career as a Forward Deployed Engineer on an anti-money laundering deployment at
+            <a href="https://palantir.com">Palantir</a>.
+          </li>
+          <li>
+            Graduated from the University of Texas at Austin's 5-year BS/MS program in Computer Science (a Bachelor's
+            and Master's degree program combined into 5 years).
+          </li>
+        </ul>
+      <p>
+        In the first years of my career I actively sought out opportunities to live and work around the globe. I
+        interned at Google's office in Seoul for four months and spent my first year at Palantir in the Singapore
+        office. I have since settled down in my hometown, Houston, Texas, and welcomed the rise of remote work.
+      </p>
+      <p>
+        Good software serves as a foundation for us to do bigger and better things. I strive to build that foundation in
+        all aspects of my work: from writing clear documentation to optimizing runtime performance. I am happiest when I
+        see the impact of my work improve the effectiveness and satisfaction of my teammates and the broader
+        organization.
+      </p>
+      <p>
+        In my free time I climb at my local bouldering gym, refine my burgeoning array of dotfiles, and tinker with home
+        automation and keyboards. I enjoy reading about programming languages, distributed systems, and design.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
