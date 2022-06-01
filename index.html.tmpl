@@ -52,7 +52,7 @@
   <div class="responsive-horizontal" style="display:flex;justify-content:space-between">
     <div class="profile-picture" style="display:flex;flex-direction:column;align-items:center">
       <img src="{{ (ds "config").image_path }}" alt="Profile picture" style="object-fit:contain;max-width:427px;padding-bottom:20px" width="100%">
-      <span>
+      <span style="padding-bottom:5px">
         🔑 <a href="andrew-sharp.pub.asc">{{ (ds "config").fingerprint }}</a>
       </span>
       <span>₿ {{ (ds "config").bitcoin }}</span>
