@@ -24,6 +24,10 @@ div {
   padding: 20px;
 }
 
+span {
+  padding: 5px;
+}
+
 h1 {
   margin: 0px;
 }
@@ -33,12 +37,17 @@ p, li {
   line-height: 1.5
 }
 
+.top {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .social {
   font-size: 1.5em;
 }
 
 .profile-picture {
-  min-width: 35%;
+  min-width: 40%;
 }
 
 /* For mobile phones: */
